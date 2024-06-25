@@ -1,15 +1,23 @@
-.chat{
+.container {
     height: 100%;
     width: 100%;
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    
-    .container{
-        background-color: #1e1f20;
-        height: 99%;
-        width: 98%;
-        border-radius: 10px;
-        
+    flex-direction: column;
+
+    .chat {
+        padding: 20px;
+        flex: 1;
+
+    }
+
+    .bottom {
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        input {}
+
+        .sendButton {}
     }
 }
