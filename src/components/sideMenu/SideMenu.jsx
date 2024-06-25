@@ -11,9 +11,9 @@ const SideMenu = () => {
                 <img src="./help.png" alt="" />
                 <img src="./activity.png" alt="" />
                 <img src="./setting.png" alt="" />
-            </div>
-            <div className="user">
-                <img src="./boy.png" alt="" className='avatar' />
+                <div className="user">
+                    <img src="./boy.png" alt="" className='avatar' />
+                </div>
             </div>
 
         </div>
