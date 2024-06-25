@@ -1,0 +1,58 @@
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    .left {
+        width: 50%;
+        font-size: 50px;
+        font-weight: 600;
+        word-spacing: 5px;
+        background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+        background-size: 400%;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: animate 10s linear infinite;
+    }
+
+    @keyframes animate {
+        0% {
+            background-position: 0%;
+        }
+
+        100% {
+            background-position: 400%
+        }
+    }
+
+    .right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        gap: 25px;
+
+        button {
+            height: 38px;
+            border-radius: 10px;
+            padding: 0 15px;
+            font-weight: 450;
+            background-color: #37393b;
+            color: white;
+            border: none;
+            outline: none;
+        }
+
+        img {
+            height: 25px;
+            width: 25px;
+            object-fit: cover;
+            cursor: pointer;
+
+        }
+
+
+
+    }
+}

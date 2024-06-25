@@ -1,0 +1,6 @@
+.mainBody{
+    background-color: transparent;
+    color: #caccce;
+    height: 100vh;
+    width: calc(100% - 65px);
+}
