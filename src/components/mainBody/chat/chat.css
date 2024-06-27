@@ -1,12 +1,66 @@
 .container {
-    height: 100%;
+    height: 90%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     .chat {
-        padding: 20px;
+        padding: 10px;
         flex: 1;
+        background-color: #1e1f20;
+        height: 100%;
+        width: 75%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        scrollbar-width: none;
+        gap: 20px;
+
+        .message{
+            max-width: 70%;
+            display: flex;
+            gap: 20px;
+
+            &.own{
+                align-self: flex-end;
+                
+                img{
+                    display: none;
+                }
+                
+                .texts{
+                    p{
+                        background-color: #FF1000;
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+            }
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            .texts{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                
+                p{
+                    padding: 20px;
+                    border-radius: 10px;
+                    background-color: #131314;
+                }
+                span{
+                    font-size: 13px;
+                }
+            }
+        }
 
     }
 
@@ -14,10 +68,40 @@
         margin-top: auto;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        /* background-color: #1e1f20; */
+        width: 50%;
+        /* height: 40px; */
+        /* margin-top: 10px; */
+        /* margin-bottom: 20px; */
+        padding: 10px 40px;
+        gap: 10px;
+        
+        
+        input {
+            background-color: transparent;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            flex: 1;
+            color: white;
+            font-size: 25px;
+            background-color: #1e1f20;
+            padding: 10px 40px;
+            /* height: 100; */
 
-        input {}
 
-        .sendButton {}
+        }
+
+        .sendButton {
+            background-color: #FF1000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 20px;
+        }
     }
 }
